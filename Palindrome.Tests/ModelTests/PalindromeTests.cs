@@ -15,17 +15,31 @@ namespace Models.Tests
     }
 
     [TestMethod]
-    public void Palindrome_ReturnsTrueForPalindrome_True()
+    public void IsPalindrome_ReturnsTrueForPalindrome_True()
     {
       Palindrome test = new Palindrome("racecar");
       Assert.AreEqual(true, test.IsPalindrome());
     }
 
     [TestMethod]
-    public void Palindrome_ReturnsFalseForNotAPalindrome_False()
+    public void IsPalindrome_ReturnsFalseForNotAPalindrome_False()
     {
       Palindrome test = new Palindrome("fudge");
       Assert.AreEqual(false, test.IsPalindrome());
+    }
+
+    [TestMethod]
+    public void IsPalindromeTheHardWay_ReturnsTrueForPalindrome_True()
+    {
+      Palindrome test = new Palindrome("racecar");
+      Assert.AreEqual(true, test.IsPalindromeTheHardWay());
+    }
+
+    [TestMethod]
+    public void IsPalindromeTheHardWay_ReturnsFalseForNotAPalindrome_False()
+    {
+      Palindrome test = new Palindrome("fudge");
+      Assert.AreEqual(false, test.IsPalindromeTheHardWay());
     }
   }
 }
