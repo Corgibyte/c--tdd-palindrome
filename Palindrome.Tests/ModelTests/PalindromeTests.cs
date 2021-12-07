@@ -45,14 +45,14 @@ namespace Models.Tests
     [TestMethod]
     public void IsPalindrome_WorksForNumbers_True()
     {
-      Palindrome test = new Palindrome("101");
+      Palindrome test = new Palindrome(101);
       Assert.AreEqual(true, test.IsPalindrome());
     }
 
     [TestMethod]
     public void IsPalindromeTheHardWay_WorksForNumbers_True()
     {
-      Palindrome test = new Palindrome("101");
+      Palindrome test = new Palindrome(101);
       Assert.AreEqual(true, test.IsPalindromeTheHardWay());
     }
   }
