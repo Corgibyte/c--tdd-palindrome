@@ -20,5 +20,12 @@ namespace Models.Tests
       Palindrome test = new Palindrome("racecar");
       Assert.AreEqual(true, test.IsPalindrome());
     }
+
+    [TestMethod]
+    public void Palindrome_ReturnsFalseForNotAPalindrome_False()
+    {
+      Palindrome test = new Palindrome("fudge");
+      Assert.AreEqual(false, test.IsPalindrome());
+    }
   }
 }
