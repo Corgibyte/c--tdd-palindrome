@@ -13,5 +13,12 @@ namespace Models.Tests
       Assert.IsInstanceOfType(test.PaliString, typeof(string));
       Assert.AreEqual(test.PaliString, "racecar");
     }
+
+    [TestMethod]
+    public void Palindrome_ReturnsTrueForPalindrome_True()
+    {
+      Palindrome test = new Palindrome("racecar");
+      Assert.AreEqual(true, test.IsPalindrome());
+    }
   }
 }
