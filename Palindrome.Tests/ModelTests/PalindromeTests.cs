@@ -41,5 +41,19 @@ namespace Models.Tests
       Palindrome test = new Palindrome("fudge");
       Assert.AreEqual(false, test.IsPalindromeTheHardWay());
     }
+
+    [TestMethod]
+    public void IsPalindrome_WorksForNumbers_True()
+    {
+      Palindrome test = new Palindrome("101");
+      Assert.AreEqual(true, test.IsPalindrome());
+    }
+
+    [TestMethod]
+    public void IsPalindromeTheHardWay_WorksForNumbers_True()
+    {
+      Palindrome test = new Palindrome("101");
+      Assert.AreEqual(true, test.IsPalindromeTheHardWay());
+    }
   }
 }
