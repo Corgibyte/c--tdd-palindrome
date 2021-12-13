@@ -2,15 +2,15 @@ using System;
 
 namespace Palindrome.Models
 {
-  public class Palindrome
+  public class PalindromeCheck
   {
     public string PaliString { get; set; }
-    public Palindrome(string paliString)
+    public PalindromeCheck(string paliString)
     {
       PaliString = paliString;
     }
 
-    public Palindrome(int paliInt)
+    public PalindromeCheck(int paliInt)
     {
       PaliString = paliInt.ToString();
     }
